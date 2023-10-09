@@ -16,6 +16,13 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                teaGreen: '#C2F8CB',
+                celadon: '#B3E9C7',
+                honeydew: '#F0FFF1',
+                amethyst: '#8367C7',
+                chryslerBlue: '#5603AD'
+            },
         },
     },
 

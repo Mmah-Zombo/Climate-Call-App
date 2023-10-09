@@ -21,7 +21,7 @@
 
             <div class="block">
                 <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                <x-input id="email" class="block mt-1 h-14 w-full focus:border-celadon focus:border-[0.1rem] focus:ring-0 focus:outline-none" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             </div>
 
             <div class="flex items-center justify-end mt-4">
@@ -29,6 +29,13 @@
                     {{ __('Email Password Reset Link') }}
                 </x-button>
             </div>
+            
         </form>
+        <div class="w-full text-right h-fit mt-2">
+            <a class=" underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+                {{ __('Go Back') }}
+            </a>
+        </div>
+        
     </x-authentication-card>
 </x-guest-layout>

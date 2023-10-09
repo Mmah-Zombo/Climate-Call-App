@@ -17,12 +17,12 @@
 
             <div>
                 <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                <x-input id="email" class="block mt-1 h-14 w-full focus:border-celadon focus:border-[0.1rem] focus:ring-0 focus:outline-none" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             </div>
 
             <div class="mt-4">
                 <x-label for="password" value="{{ __('Password') }}" />
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
+                <x-input id="password" class="block mt-1 h-14 w-full focus:border-celadon focus:border-[0.1rem] focus:ring-0 focus:outline-none" type="password" name="password" required autocomplete="current-password" />
             </div>
 
             <div class="block mt-4">
@@ -33,16 +33,28 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
+                <a class="mr-4 underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">
+                    {{ __('Register here!') }}
+                </a>
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
 
-                <x-button class="ml-4">
-                    {{ __('Log in') }}
-                </x-button>
+               
             </div>
+            <div class="flex items-center justify-end mt-4">
+                <button class="ml-4 bg-amethyst text-white inline-flex items-center px-4 py-2 border border-transparent rounded-md font-semibold text-xs uppercase tracking-widest hover:bg-teaGreen focus:bg-teaGreen hover:text-amethyst active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150">
+                    {{ __('Log in') }}
+                </button>
+            </div>
+            
+            {{-- <div class="w-ful h-fit text-right mt-4">
+                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">
+                    {{ __('You don\'t have an account? Register here') }}
+                </a>
+            </div> --}}
         </form>
     </x-authentication-card>
 </x-guest-layout>
