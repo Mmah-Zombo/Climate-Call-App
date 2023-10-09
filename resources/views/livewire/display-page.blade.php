@@ -9,5 +9,9 @@
                 </button>
             </form>
         </div>
+        <div id="myElement" data-my-data="{{ $loca }}"></div>
+
     </div>
+    <script type="module" src="{{ asset('client/js/displayPage.js')}}"></script>
 </x-app-layout>
+

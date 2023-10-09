@@ -40,17 +40,7 @@
                     <div class="text-purple-700 w-full h-full border-t-2 border-white flex flex-col items-start justify-between">
                         <p class="text-lg font-bold px-2 pt-1">Weather Details</p>
                         <div class="text-lg w-full text-purple-700 pb-2 border-b-2 border-white" id="extraData">
-                            {{-- <div class="mb-2 w-full flex items-center justify-between">
-                                <p>Ground Level</p>
-                                <p>10</p>
-                            </div>
-                            <div class="mb-2">
-                                <p>Cloudiness</p>
-                            </div>
-                            <div class="mb-2">Feels Like</div>
-                            <div class="mb-2">Sea Level</div>
-                            <div class="mb-2">Humidity</div>
-                            <div class="mb-2">Pressure</div> --}}
+                            {{-- Dynamic content --}}
                         </div>
                     </div>
                 </div>
