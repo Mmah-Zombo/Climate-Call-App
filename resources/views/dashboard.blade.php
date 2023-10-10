@@ -51,13 +51,13 @@
                 <div class="text-lg w-full h-fit px-4 py-2 bg-amethyst text-white mb-4 rounded-lg hover:bg-teaGreen hover:text-amethyst hover:h-14 flex items-center justify-between">
                     <p>{{$search->location}}</p>
                     <p>{{ $search->created_at->diffForHumans()}}</p>
-                    <div>X</div>
+                    @livewire('delete-search', ['searchToDelete' => $search->id])
                 </div>
-              @endforeach
+               @endforeach
             </div>
               
             @else
-                <div>You have no search history! Make your first</div>
+                <div class="hidden text-lg px-4 text-gray-600" id="Shistory">You have no search history! Make your first search.</div>
             @endif
         </div>
     </div>

@@ -6,6 +6,7 @@ const weather = document.getElementById('weather');
 const temperature = document.getElementById('temp');
 const weather_icon = document.getElementById('weather_icon');
 const extraData = document.getElementById('extraData');
+const delete_search = document.getElementById('delete');
 
 const sHistory = document.getElementById('Shistory');
 const W_info = document.getElementById('W_info');
@@ -32,6 +33,14 @@ info.addEventListener('click', () => {
     console.log('hey')
     W_info.classList.add('grid');
 });
+
+// Removes a deleted search history
+if (delete_search) {
+    delete_search.addEventListener('click', () => {
+        delete_search.parentNode.classList.remove('flex');
+        delete_search.parentNode.classList.add('hidden');
+    })
+}
 
 function updateTime() {
     let currentDate = new Date();

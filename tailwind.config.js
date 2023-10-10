@@ -23,6 +23,9 @@ export default {
                 amethyst: '#8367C7',
                 chryslerBlue: '#5603AD'
             },
+            height: {
+                '136': '34rem'
+            }
         },
     },
 

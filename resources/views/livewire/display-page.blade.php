@@ -8,8 +8,17 @@
                     <div class="flex items-center justify-center text-white h-10 md:h-14 w-20 md:w-14 mr-2 rounded-full bg-gradient-to-tr from-celadon to-teal-600"></div>
                 </button>
             </form>
+            @error('location')
+            <div class="text-red-500 mt-2 pl-4 text-sm">
+                {{ $message}}
+            </div>
+            @enderror
+            @livewire('search-result')
+            
         </div>
-        <div id="myElement" data-my-data="{{ $loca }}"></div>
+        @isset($loca) 
+         <div id="myElement" data-my-data="{{ $loca }}"></div>
+        @endisset
 
     </div>
     <script type="module" src="{{ asset('client/js/displayPage.js')}}"></script>
