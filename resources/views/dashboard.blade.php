@@ -20,7 +20,7 @@
                 <p class="nav text-lg text-chryslerBlue hover:bg-teaGreen hover:cursor-pointer py-4 px-2 rounded-t-xl">Search History</p>
             </div>
             {{-- Search hisroty and current location data navigation menu --}}
-            <div class="mb-10 h-96 overflow-hidden shadow-2xl sm:rounded-lg grid grid-cols-3" id="W_info">
+            <div class="mb-8 h-96 overflow-hidden shadow-2xl sm:rounded-lg grid grid-cols-3" id="W_info">
                 <div class="col-span-2 p-4 bg-white flex flex-col items-center justify-between">
                    <div class="text-amethyst font-medium w-4/5 h-fit pt-1"><p>Current Location</p></div>
                    <div class="w-full flex items-center justify-center"><img src="" alt="weather_icon" class="w-32 h-32" id="weather_icon"></div>
@@ -47,6 +47,7 @@
             </div>
             @if($history->count())
             <div class="hidden" id="Shistory">
+                @livewire('clear-history')
                 @foreach ($history as $search)
                 <div class="text-lg w-full h-fit px-4 py-2 bg-amethyst text-white mb-4 rounded-lg hover:bg-teaGreen hover:text-amethyst hover:h-14 flex items-center justify-between">
                     <p>{{$search->location}}</p>
