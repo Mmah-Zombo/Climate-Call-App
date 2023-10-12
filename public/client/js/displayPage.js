@@ -1,7 +1,7 @@
 import API_KEY from "../../build/keys/keys.js";
 
 const dat = document.getElementById("myElement");
-const location = dat.getAttribute("data-my-data");
+const location = dat ? dat.getAttribute("data-my-data") : "";
 const result = document.getElementById("result");
 const resultList = document.getElementById("resultList");
 const selectedLocation = document.getElementById('selectedLocation');

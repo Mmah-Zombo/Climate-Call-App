@@ -6,8 +6,6 @@ const weather = document.getElementById('weather');
 const temperature = document.getElementById('temp');
 const weather_icon = document.getElementById('weather_icon');
 const extraData = document.getElementById('extraData');
-const delete_search = document.getElementById('delete');
-const clearHistory = document.getElementById('clearHistory');
 
 const sHistory = document.getElementById('Shistory');
 const W_info = document.getElementById('W_info');
@@ -34,22 +32,6 @@ info.addEventListener('click', () => {
     W_info.classList.add('md:grid');
     W_info.classList.add('flex')
 });
-
-// Removes a deleted search history
-if (delete_search) {
-    delete_search.addEventListener('click', () => {
-        delete_search.parentNode.classList.remove('flex');
-        delete_search.parentNode.classList.add('hidden');
-    })
-}
-
-// Removes the search history when the history is empty
-if (clearHistory) {
-    clearHistory.addEventListener('click', () => {
-        sHistory.classList.remove('block');
-        sHistory.classList.add('hidden');
-    })
-}
 
 function updateTime() {
     let currentDate = new Date();

@@ -43,22 +43,12 @@
                     </div>
                 </div>
             </div>
-            @if($history->count())
+            {{-- Search history --}}
             <div class="hidden" id="Shistory">
-                @livewire('clear-history')
-                @foreach ($history as $search)
-                <div class="text-lg w-full h-fit px-4 py-2 bg-amethyst text-white mb-4 rounded-lg hover:bg-teaGreen hover:text-amethyst hover:h-14 flex items-center justify-between">
-                    <p>{{$search->location}}</p>
-                    <p>{{ $search->created_at->diffForHumans()}}</p>
-                    @livewire('delete-search', ['searchToDelete' => $search->id])
-                </div>
-               @endforeach
+                @livewire('dashboard') 
             </div>
-              
-            @else
-                <div class="hidden text-lg px-4 text-gray-600" id="Shistory">You have no search history! Make your first search.</div>
-            @endif
         </div>
     </div>
     <script type="module" src="{{ asset('client/js/dashboard.js') }}"></script>
+
 </x-app-layout>
