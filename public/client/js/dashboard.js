@@ -21,8 +21,8 @@ const [info, history2] = navBar;
 history2.addEventListener('click', () => {
     sHistory.classList.remove('hidden');
     sHistory.classList.add('block');
-    W_info.classList.remove('grid');
-
+    W_info.classList.remove('md:grid');
+    W_info.classList.remove('flex')
     W_info.classList.add('hidden');
 });
 
@@ -31,8 +31,8 @@ info.addEventListener('click', () => {
     sHistory.classList.remove('block');
     sHistory.classList.add('hidden');
     W_info.classList.remove('hidden');
-    console.log('hey')
-    W_info.classList.add('grid');
+    W_info.classList.add('md:grid');
+    W_info.classList.add('flex')
 });
 
 // Removes a deleted search history
@@ -120,7 +120,5 @@ function getCordinate() {
                     weather_icon.setAttribute('src', `https://openweathermap.org/img/wn/${w_icon}@2x.png`)
                 })
             });
-    } else {
-        console.log("Geolocation is not available in this browser.");
     }
 }
