@@ -130,7 +130,7 @@ function getWeatherData() {
                     const lat = each['lat'];
                     const lon = each['lon'];
 
-                    // Gets weather data for the first element
+                    // Gets weather data for the elements in the list
                     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`)
                     .then(res => res.json())
                     .then(data2 => {
