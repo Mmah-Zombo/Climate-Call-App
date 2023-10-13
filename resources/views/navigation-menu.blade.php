@@ -15,6 +15,12 @@
                         {{ __('Community') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex bg-gray-200 h-12 rounded">
+                    <x-nav-link href="{{ route('plant-care') }}" :active="request()->routeIs('plant-care')">
+                        {{ __('Plant Care') }}
+                    </x-nav-link>
+                </div>
             </div>
             
             <div class="hidden sm:flex sm:items-center sm:ml-6">

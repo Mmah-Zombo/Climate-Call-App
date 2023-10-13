@@ -24,7 +24,8 @@ export default {
                 chryslerBlue: '#5603AD'
             },
             height: {
-                '136': '34rem'
+                '136': '34rem',
+                '100': '25rem'
             }
         },
     },

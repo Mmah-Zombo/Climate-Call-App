@@ -54,4 +54,9 @@ Route::middleware([
     );
     Route::post('/post', [Posts::class, 'store'])->name('posts');
     Route::post('/update_post/{post_id}', [Posts::class, 'updatePost'])->name('updatePost');
+
+    Route::get('/plant-care', function () {
+        return view('plant-care');
+    }
+    )->name('plant-care');
 });

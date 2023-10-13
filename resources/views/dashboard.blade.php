@@ -3,9 +3,9 @@
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
             <form action="{{ route('display')}}" method="post" class="w-full h-fit flex items-center justify-center bg-white opacity-90 rounded-full border-2 border-opacity-50 focus-within:border-celadon">
                 @csrf
-                <input type="text" name="location" id="location" class="rounded-full bg-transparent outline-none border-none w-full h-10 md:h-16 text-xl md:text-2xl p-4 pl-5 md:pl-9 focus:outline-none focus:ring-transparent focus:border-none" placeholder="Enter the region or area">
+                <input type="text" name="location" id="location" class="rounded-full bg-transparent outline-none border-none w-full h-10 md:h-12 text-xl md:text-2xl p-4 pl-5 md:pl-9 focus:outline-none focus:ring-transparent focus:border-none" placeholder="Enter a region or area">
                 <button type="submit">
-                    <div class="flex items-center justify-center text-white h-9 w-9 md:h-14 md:w-14 mr-1 md:mr-2 rounded-full bg-celadon"></div>
+                    <div class="flex items-center justify-center text-white h-9 w-9 md:h-10 md:w-10 mr-1 md:mr-2 rounded-full bg-celadon"></div>
                 </button>
             </form>
 
@@ -16,7 +16,7 @@
             @enderror
 
             {{-- Search hisroty and current location data navigation menu --}}
-            <div class="mt-5 md:mt-20 mb-10 w-full h-fit border-b-2 border-chryslerBlue border-opacity-30 flex">
+            <div class="mt-5 md:mt-10 mb-10 w-full h-fit border-b-2 border-chryslerBlue border-opacity-30 flex">
                 <p class="nav ml-4 mr-10 text-lg text-chryslerBlue hover:bg-teaGreen hover:cursor-pointer py-2 md:py-4 px-2 rounded-t-xl">Weather Info</p>
                 <p class="nav text-lg text-chryslerBlue hover:bg-teaGreen hover:cursor-pointer py-2 md:py-4 px-2 rounded-t-xl">Search History</p>
             </div>
