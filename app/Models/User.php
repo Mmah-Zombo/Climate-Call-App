@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Post;
 use App\Models\Search;
 use Laravel\Sanctum\HasApiTokens;
 use Laravel\Jetstream\HasProfilePhoto;
@@ -62,5 +63,9 @@ class User extends Authenticatable
 
     public function searches() {
         return $this->hasMany(Search::class);
+    }
+
+    public function posts() {
+        return $this->hasMany(Post::class);
     }
 }
