@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="py-8 md:py-12">
+    <div class="py-8 pb-40 md:py-12">
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
             @livewire('posts')
             <div>
