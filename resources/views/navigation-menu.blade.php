@@ -147,6 +147,10 @@
             <x-responsive-nav-link href="{{ route('community') }}" :active="request()->routeIs('community')">
                 {{ __('Community') }}
             </x-responsive-nav-link>
+
+            <x-responsive-nav-link href="{{ route('plant-care') }}" :active="request()->routeIs('plant-care')">
+                {{ __('Plant Care') }}
+            </x-responsive-nav-link>
         </div>
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
