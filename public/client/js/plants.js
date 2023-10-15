@@ -32,7 +32,7 @@ async function dataPaginate(paGe) {
                 // console.log(plant.watering)
                 // console.log(image_url)
                 let new_div = document.createElement('div');
-                new_div.className = "w-72 h-100 p-4 bg-white hover:shadow-xl border-2 rounded"
+                new_div.className = "w-72 h-[30rem] mb-4 md:mb-0 p-4 bg-white hover:shadow-xl border-2 rounded"
                 new_div.innerHTML = 
                 `
                         <img src="${image_url}" alt="plant-image" class="h-2/5 w-full">
@@ -69,18 +69,15 @@ async function dataPaginate(paGe) {
             console.log(nextP);
             nextP.addEventListener('click', async () => {
                 if (current_page + 1 <= last_page) {
-                    console.log(current_page +1)
                     let pg = current_page + 1;
-                    await dataPaginate(pg)
-                    console.log('here')
+                    await dataPaginate(pg);
                 }
             });
 
             prev.addEventListener('click', async () => {
                 if (current_page - 1 >= 1) {
-                    console.log(current_page - 1)
                     let pg = current_page - 1;
-                    await dataPaginate(pg)
+                    await dataPaginate(pg);
                 }
             });
           

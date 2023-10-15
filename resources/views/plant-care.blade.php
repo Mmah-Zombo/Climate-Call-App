@@ -6,7 +6,7 @@
                 <p>Plants are very important in the fight against adverse climate change. Thus this section has been developed to give you a fair knowledge of the basic care needed for various type of plants. This knowledge will act as your starter guide to grow them.</p>
             </div>
 
-            <div class="w-full h-fit grid grid-cols-4 gap-5 mt-10" id="plant-list">
+            <div class="w-full h-fit md:grid grid-cols-4 gap-5 mt-10" id="plant-list">
                 {{-- Dynamic content --}}
             </div>
 

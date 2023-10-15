@@ -18,7 +18,7 @@
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6  text-right z-10">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="font-semibold text-whihte hover:text-green-400  focus:outline focus:outline-2 focus:rounded-sm focus:outline-green-400 p-2 bg-purple-400 rounded text-lg">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-white hover:text-green-400  focus:outline focus:outline-2 focus:rounded-sm focus:outline-green-400 p-2 bg-purple-400 rounded text-lg">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}" class="font-semibold text-white hover:text-green-400 focus:outline focus:outline-2 focus:rounded-sm focus:outline-green-400 p-2 bg-purple-400 rounded text-lg">Log in</a>
 
