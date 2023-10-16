@@ -34,5 +34,5 @@ After running the command click in the url displayed in your terminal by doing `
 - Laravel
 - TailwindCSS
 - Open Weather API
-- ChatGPT API
+- Perenual API
 - ..etc
