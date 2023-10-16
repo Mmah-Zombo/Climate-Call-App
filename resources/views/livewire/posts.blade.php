@@ -6,11 +6,7 @@
             <div class="w-fit flex items-center justify-between">
                 <p class="text-amethyst font-bold text-md">{{ $post->user->name }}</p>
                 <p class="ml-4 text-celadon">
-                    @if (isset($post->updated_at))
-                    {{ $post->updated_at->diffForHumans() }}
-                    @else
                     {{ $post->created_at->diffForHumans() }}
-                    @endif
                 </p>
                 @if (Auth::check() && $post->user_id === Auth::user()->id)
                     <p id="edit_btn" wire:click='toggle({{ $post->id }})' class="ml-4 text-gray-500 hover:cursor-pointer">edit</p>
@@ -24,6 +20,12 @@
             <p class="w-full">{{ $post->content }}</p>
         </div>
 
+        <div class="w-full flex items-center justify-between">
+            <a href="{{ route('comments', $post) }}" class="mt-4 text-gray-500 hover:cursor-pointer">Comment</a>
+            @if ($post->updated_at != $post->created_at)
+            <div class=" text-gray-500 hover:cursor-pointer">edited</div>
+            @endif
+        </div>
         <div class="@if ($post->id == $editId)
                 block @elseif ($post->id != $editId)
                 hidden

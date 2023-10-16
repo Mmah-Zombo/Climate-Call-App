@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CommunityComment;
 use App\Http\Controllers\DashboardController;
+use App\Livewire\Comments;
 use App\Livewire\DisplayPage;
 use App\Livewire\Posts;
 use Illuminate\Support\Facades\Route;
@@ -54,6 +56,10 @@ Route::middleware([
     );
     Route::post('/post', [Posts::class, 'store'])->name('posts');
     Route::post('/update_post/{post_id}', [Posts::class, 'updatePost'])->name('updatePost');
+
+    Route::get('/comments/{post}', [CommunityComment::class, 'show'])->name('comments');
+    Route::post('/comment/{post}', [Comments::class, 'store'])->name('addComment');
+    Route::post('/update_comment/{comment_id}', [Comments::class, 'updateComment'])->name('updateComment');
 
     Route::get('/plant-care', function () {
         return view('plant-care');

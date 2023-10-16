@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex bg-gray-200 h-12 rounded">
-                    <x-nav-link href="{{ route('community') }}" :active="request()->routeIs('community')">
+                    <x-nav-link href="{{ route('community') }}" :active="request()->routeIs('community') || request()->routeIs('comments')">
                         {{ __('Community') }}
                     </x-nav-link>
                 </div>
@@ -144,7 +144,7 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden mt-4 bg-white">  
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link href="{{ route('community') }}" :active="request()->routeIs('community')">
+            <x-responsive-nav-link href="{{ route('community') }}" :active="request()->routeIs('community') || request()->routeIs('comments')">
                 {{ __('Community') }}
             </x-responsive-nav-link>
 
