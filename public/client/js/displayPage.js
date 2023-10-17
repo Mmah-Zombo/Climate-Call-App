@@ -78,8 +78,8 @@ function getWeatherData() {
                         <p class="border-b pl-2">Humidity: ${weather_main.humidity}%</p>
                         <p class="border-b pl-2">Pressure: ${weather_main.pressure} hPa</p>
                         <p class="border-b pl-2">Feels like: ${weather_main.feels_like} &deg;C</p>
-                        <p class="border-b pl-2">Sea Level: ${weather_main.sea_level} hPa</p>
-                        <p class="border-b pl-2">Ground Level: ${weather_main.grnd_level} hPa</p>
+                        <p class="border-b pl-2">Sea Level: ${weather_main.sea_level ? weather_main.sea_level + ' hPa'  : 'not available'}</p>
+                        <p class="border-b pl-2">Ground Level: ${weather_main.grnd_level ? weather_main.grnd_level + ' hPa' : 'not available'}</p>
                         `;
                     })
 
@@ -147,8 +147,8 @@ function getWeatherData() {
                         <p class="border-b pl-2">Humidity: ${weather_main.humidity}%</p>
                         <p class="border-b pl-2">Pressure: ${weather_main.pressure} hPa</p>
                         <p class="border-b pl-2">Feels like: ${weather_main.feels_like} &deg;C</p>
-                        <p class="border-b pl-2">Sea Level: ${weather_main.sea_level} hPa</p>
-                        <p class="border-b pl-2">Ground Level: ${weather_main.grnd_level} hPa</p>
+                        <p class="border-b pl-2">Sea Level: ${weather_main.sea_level ? weather_main.sea_level + ' hPa' : 'not available' }</p>
+                        <p class="border-b pl-2">Ground Level: ${weather_main.grnd_level ? weather_main.grnd_level + ' hPa'  : 'not availbale'}</p>
                         `;
                     })
 

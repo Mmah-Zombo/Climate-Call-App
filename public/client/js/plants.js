@@ -35,7 +35,7 @@ async function dataPaginate(paGe) {
                 new_div.className = "w-72 h-[30rem] mb-4 md:mb-0 p-4 bg-white hover:shadow-xl border-2 rounded"
                 new_div.innerHTML = 
                 `
-                        <img src="${image_url}" alt="plant-image" class="h-2/5 w-full">
+                        <img src="${image_url}" alt="no image avalibale for this plant" class="h-2/5 w-full">
                         <p class="bg-honeydew px-4 py-2 mt-4 rounded w-full text-center text-amethyst text-xl">${plant_name}</p>
                         <p class="mt-2 text-md px-2">It's scientific name is ${scientific_name}.</p>
                         <div class="w-full h-fit mt-2 text-md text-chryslerBlue rounded-full px-2 flex items-center justify-between">
