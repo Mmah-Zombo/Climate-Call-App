@@ -103,7 +103,7 @@ function getWeatherData() {
                             let new_div = document.createElement('div');
                             new_div.innerHTML =
                             `
-                            <div class="bg-celadon bg-opacity-50 border-2 p-2 border-white text-chryslerBlue w-52 h-56 rounded flex flex-col items-center justify-between mr-2">
+                            <div class="bg-celadon bg-opacity-50 border-2 p-2 border-white text-chryslerBlue w-52 h-52 rounded flex flex-col items-center justify-between mr-2">
                                 <p class="text-xl bg-white bg-opacity-40 rounded-full px-4 py-1">${dayOfWeek}</p>
                                 <img src="https://openweathermap.org/img/wn/${f_weather['icon']}@2x.png" alt="weather icon" id="weather_icon2">
                                 <div class="text-white w-full bg-amethyst bg-opacity-60 text-lg flex flex-col items-center justify-between rounded">
@@ -172,7 +172,7 @@ function getWeatherData() {
                             let new_div = document.createElement('div');
                             new_div.innerHTML =
                             `
-                            <div class="bg-celadon bg-opacity-50 border-2 p-2 border-white text-chryslerBlue w-52 h-56 rounded flex flex-col items-center justify-between mr-2">
+                            <div class="bg-celadon bg-opacity-50 border-2 p-2 border-white text-chryslerBlue w-52 h-52 rounded flex flex-col items-center justify-between mr-2">
                                 <p class="text-xl bg-white bg-opacity-40 rounded-full px-4 py-1">${dayOfWeek}</p>
                                 <img src="https://openweathermap.org/img/wn/${f_weather['icon']}@2x.png" alt="weather icon" id="weather_icon2">
                                 <div class="text-white w-full bg-amethyst bg-opacity-60 text-lg flex flex-col items-center justify-between rounded">

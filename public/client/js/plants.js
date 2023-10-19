@@ -28,11 +28,8 @@ async function dataPaginate(paGe) {
                 let sunlight = plant.sunlight[0];
                 let watering = plant.watering;
                 let scientific_name = plant.scientific_name[0];
-                // let other_name = plant.other_name[0];
-                // console.log(plant.watering)
-                // console.log(image_url)
                 let new_div = document.createElement('div');
-                new_div.className = "w-72 h-[30rem] mb-4 md:mb-0 p-4 bg-white hover:shadow-xl border-2 rounded"
+                new_div.className = "w-72 h-[35rem] mb-4 md:mb-0 p-4 bg-white hover:shadow-xl border-2 rounded"
                 new_div.innerHTML = 
                 `
                         <img src="${image_url}" alt="no image avalibale for this plant" class="h-2/5 w-full">

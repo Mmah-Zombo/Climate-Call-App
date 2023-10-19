@@ -18,7 +18,7 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased hover:cursor-default">
         <x-banner />
 
         <div class="min-h-screen bg-gray-50">

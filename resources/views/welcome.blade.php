@@ -62,15 +62,15 @@
             </div>
 
             <div class="mt-10 w-full h-fit md:grid grid-cols-3 gap-5">
-                <div class="w-full h-[27rem] md:h-80 bg-white rounded-t-full md:rounded-tr-none md:rounded-l-full  p-4 pt-28 md:pt-4 md:pl-10 text-center md:text-right">
+                <div class="w-full h-[30rem] md:h-80 bg-white rounded-t-full md:rounded-tr-none md:rounded-l-full  p-4 pt-28 md:pt-4 md:pl-10 text-center md:text-right">
                     <p class="text-chryslerBlue text-4xl mb-4">Weather Data</p>
                     <p class="text-xl">You have the ability to search for any location of your choice and get real time data of the weather condition of that place and get a 4 days weather forecasts for that place.</p>
-                    <div class="w-full h-fit flex items-center justify-end">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-20 h-20 mt-4 mr-14"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 224c0 53 43 96 96 96h47.2L290 202.5c17.6-14.1 42.6-14 60.2 .2s22.8 38.6 12.8 58.8L333.7 320H352h64c53 0 96-43 96-96s-43-96-96-96c-.5 0-1.1 0-1.6 0c1.1-5.2 1.6-10.5 1.6-16c0-44.2-35.8-80-80-80c-24.3 0-46.1 10.9-60.8 28C256.5 24.3 219.1 0 176 0C114.1 0 64 50.1 64 112c0 7.1 .7 14.1 1.9 20.8C27.6 145.4 0 181.5 0 224zm330.1 3.6c-5.8-4.7-14.2-4.7-20.1-.1l-160 128c-5.3 4.2-7.4 11.4-5.1 17.8s8.3 10.7 15.1 10.7h70.1L177.7 488.8c-3.4 6.7-1.6 14.9 4.3 19.6s14.2 4.7 20.1 .1l160-128c5.3-4.2 7.4-11.4 5.1-17.8s-8.3-10.7-15.1-10.7H281.9l52.4-104.8c3.4-6.7 1.6-14.9-4.2-19.6z"/></svg>
+                    <div class="w-full h-fit flex items-center justify-center md:justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-20 h-20 mt-4 md:mr-14"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 224c0 53 43 96 96 96h47.2L290 202.5c17.6-14.1 42.6-14 60.2 .2s22.8 38.6 12.8 58.8L333.7 320H352h64c53 0 96-43 96-96s-43-96-96-96c-.5 0-1.1 0-1.6 0c1.1-5.2 1.6-10.5 1.6-16c0-44.2-35.8-80-80-80c-24.3 0-46.1 10.9-60.8 28C256.5 24.3 219.1 0 176 0C114.1 0 64 50.1 64 112c0 7.1 .7 14.1 1.9 20.8C27.6 145.4 0 181.5 0 224zm330.1 3.6c-5.8-4.7-14.2-4.7-20.1-.1l-160 128c-5.3 4.2-7.4 11.4-5.1 17.8s8.3 10.7 15.1 10.7h70.1L177.7 488.8c-3.4 6.7-1.6 14.9 4.3 19.6s14.2 4.7 20.1 .1l160-128c5.3-4.2 7.4-11.4 5.1-17.8s-8.3-10.7-15.1-10.7H281.9l52.4-104.8c3.4-6.7 1.6-14.9-4.2-19.6z"/></svg>
                     </div>
                 </div>
 
-                <div class="w-full h-100 md:h-80 bg-white p-4 md:pl-10 text-center">
+                <div class="w-full h-[26rem] md:h-80 bg-white p-4 md:pl-10 text-center">
                     <p class="text-chryslerBlue text-4xl mb-4">Chat Community</p>
                     <p class="text-xl">Share your thoughts and useful information on climate change. This gives you the ability to help others know more about climate issues and helps you to gain more knowledge.</p>
                     <div class="w-full h-fit flex items-center justify-center">
@@ -81,8 +81,8 @@
                 <div class="w-full h-[27rem] md:h-80 bg-white rounded-b-full md:rounded-bl-none md:rounded-r-full p-4 md:pr-10 text-center md:text-left">
                     <p class="text-chryslerBlue text-4xl mb-4">Plant Guide</p>
                     <p class="text-xl">Since plants are crucial in the climate war, Climate Call therefore provides a mini-book-like section that gives you the basic knowledge for caring for over 1000 species of plants.</p>
-                    <div class="w-full h-fit flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-20 h-20 ml-14 mt-4"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z"/></svg>
+                    <div class="w-full h-fit flex items-center justify-center md:justify-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-20 h-20 md:ml-14 mt-4"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z"/></svg>
                     </div>
                 </div>
             </div>
@@ -101,18 +101,21 @@
                 <br>
                 <p class="text-xl md:text-2xl">Her drive to solve one of UN'S SDGs led her on the journey of developing this web application.</p>
                 <br>
-                <p class="text-xl md:text-2xl">Connect with her on Twitter and Instagram @:</p>
+                <p class="text-xl md:text-2xl">Connect with her on Twitter(X) and Hashnode:</p>
                 <br>
-                <div class="w-full h-fit flex items-center justify-between">
+                <div class="w-full h-fit flex items-center">
                     <div class="w-fit px-4 h-fit py-2 text-center bg-white hover:bg-opacity-50  bg-opacity-20 rounded">
-                        <p class="text-xl text-amethyst hover:text-black hover:cursor-pointer">zombo_mah</p>
+                        <a href="https://twitter.com/zombo_mah" class="text-xl text-amethyst hover:text-black hover:cursor-pointer">zombo_mah</a>
+                    </div>
+                    <div class="ml-4 w-fit px-4 h-fit py-2 text-center bg-white hover:bg-opacity-50  bg-opacity-20 rounded">
+                        <a href="https://hashnode.com/@Zombo" class="text-xl text-amethyst hover:text-black hover:cursor-pointer">Zombo</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="w-full h-40 bg-amethyst p-10 md:px-20 md:py-10 text-center">
-            <p class="mb-5 text-lg">Check out the application's code on Github <span class="w-fit px-2 md:px-3 py-1 h-fit bg-black text-amethyst rounded">@github</span> </p>
+            <p class="mb-5 text-lg">Check out the application's code on Github <a href="https://github.com/Mmah-Zombo/Climate-Call-App" class="w-fit px-2 md:px-3 py-1 h-fit bg-black text-amethyst rounded">@github</a> </p>
             <p>&copy;Copyright 2023. All rights reserved</p>
         </div>
     </body>
