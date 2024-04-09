@@ -93,7 +93,7 @@
                 <p class="">The Creator</p>
             </div>
             <div class="md:w-4/6 py-5 mt-8 h-full border-2 border-amethyst flex items-center justify-center">
-                <img src="{{ asset('build/assets/myimage.jpeg')}}" alt="the app creator" class="w-80 h-80">
+                <img src="{{ asset('/client/img/image.png')}}" alt="the app creator" class="w-80 h-80">
             </div>
             <div class="w-full h-full text-white">
                 <p class="text-teaGreen text-4xl font-bold mb-4 mt-7">M<span class="text-amethyst">'</span>mah Zombo</p>
