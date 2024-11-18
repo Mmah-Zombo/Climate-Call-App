@@ -1,6 +1,11 @@
 FROM richarvey/nginx-php-fpm:1.7.2
 
 COPY . .
+# Copy the deployment scripts
+COPY scripts/ /scripts/
+
+# Ensure the deploy script is executable
+RUN chmod +x /scripts/00-laravel-deploy.sh
 
 # Image config
 ENV SKIP_COMPOSER 1
@@ -16,5 +21,8 @@ ENV LOG_CHANNEL stderr
 
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
+
+# Set the entrypoint to your deploy script
+ENTRYPOINT ["/bin/sh", "/scripts/00-laravel-deploy.sh"]
 
 CMD ["/start.sh"]
