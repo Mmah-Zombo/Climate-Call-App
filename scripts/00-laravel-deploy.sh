@@ -17,9 +17,9 @@ echo "Running migrations..."
 php artisan migrate --force
 
 echo "Installing JavaScript dependencies..."
-npm install --prefix /var/www/html
+npm install
 
 echo "Building Vite assets..."
-npm run build --prefix /var/www/html
+npm run build
 
 echo "Deployment complete!"
