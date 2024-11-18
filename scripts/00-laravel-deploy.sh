@@ -16,6 +16,21 @@ php artisan route:cache
 echo "Running migrations..."
 php artisan migrate --force
 
+# Install Node.js and NPM (if not already installed)
+echo "Checking for Node.js installation..."
+if ! command -v node >/dev/null 2>&1; then
+    echo "Node.js not found. Installing Node.js..."
+    # Using NodeSource Node.js Binary Distributions
+    curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+else
+    echo "Node.js is already installed."
+fi
+
+# Verify Node.js and NPM installation
+node -v
+npm -v
+
 echo "Installing JavaScript dependencies..."
 npm install
 
