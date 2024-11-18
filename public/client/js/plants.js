@@ -66,7 +66,6 @@ async function dataPaginate(paGe) {
             current.innerHTML = "";
             current.innerHTML = current_page;
             
-            console.log(nextP);
             nextP.addEventListener('click', async () => {
                 if (current_page + 1 <= last_page) {
                     let pg = current_page + 1;
